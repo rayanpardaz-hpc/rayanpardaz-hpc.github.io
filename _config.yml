@@ -1,0 +1,99 @@
+# WhatATheme
+markdown: kramdown
+
+# URL of the Site
+url: 'https://rayanpardaz-hpc.ir'
+# Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
+baseurl: 
+
+# Title of the Site
+title: رایان پرداز
+# Description of the Site
+description: گروه خدمات و مشاوره رایان پرداز
+# URL of Image of the Site
+site-image: /assets/images/meta.jpg
+# Keywords of the Site
+site-keywords: Site, Template, Theme
+# URL for the Image of custom Favicon
+favicon-url: 
+
+# URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
+heroimage: /assets/images/hero.png
+
+# Social Media and Contact
+# If you don't want to use any icon, you can leave them blank.
+email: rayanpardaz.hpc@gmail.com
+facebook_username: /
+twitter_username: /
+instagram_username: /
+linkedin_username: /
+mobile_number: 989211680072
+phone_number: 989211680072
+fax: 
+whatsapp: true
+address: "پردیس ۲ مهندسی دانشگاه شیراز، دفتر نوآوری مهندسی"
+location: https://maps.app.goo.gl/uf2atdDL1fc1K8hA9
+
+# Google Analytics
+google-analytics: 
+
+# Disqus
+disqus-shortname: 
+
+# Name of the Author
+author-name: رایان پرداز
+# URL for the Image of the Author
+author-image: /assets/images/author.png
+# 60 Words About the Author
+author-about: معرفی <br><br> تیم رایان‌پرداز به عنوان یک هسته نوآور در اسفندماه 1400 فعالیت خود را در مرکز نوآوری تخصصی علوم مهندسی دانشکده مهندسی دانشگاه شیراز آغاز کرد. هسته اصلی این تیم شامل آقای دکتر محمد معدلی محقق پسادکتری در بخش مهندسی و علم مواد دانشگاه شیراز، آقای مهندس محمد زینلی کارشناس برنامه‌ریزی تعمیرات و مدیر شبکه در شرکت مجتمع گاز پارس جنوبی و آقای مهران معین دانشجوی کارشناسی رشته ریاضی دانشگاه شیراز است.
+# 60 Words About the services
+author-services: خدمات ما <br><br> تیم رایان‌پرداز با تجمیع تخصص‌های لازم، توانسته خدمات مختلف مرتبط با مراکز محاسبات را ارائه دهد. این خدمات عبارتند از مشاوره جهت خرید سخت‌افزار مناسب، نصب و راه‌اندازی سخت‌افزار و سامانه‌های مرتبط با مرکز محاسبات، پشتیبانی از کاربران، آموزش مدیر سیستم و بسیاری خدمات دیگر
+# URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
+author-url: 
+
+# SASS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Build settings
+plugins:
+  - jekyll-admin
+  - jekyll-feed
+
+# Permalink
+permalink: "blog/:title"
+
+# Compress
+compress_html:
+  clippings: all
+
+# Defaults
+defaults:
+  -
+    scope:
+      type: 'posts'
+    values:
+      layout: post
+      post-image: ""
+      description: ""
+      tags:
+        - ""
+  -
+    scope:
+      type: 'pages'
+    values:
+      layout: page
+
+# Exclude
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

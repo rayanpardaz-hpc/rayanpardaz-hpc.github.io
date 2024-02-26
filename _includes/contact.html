@@ -1,0 +1,48 @@
+<section class="hero is-fullheight has-text-centered" id="contact">
+    <div class="hero-body">
+        <div class="container">
+            <!-- Phone -->
+            {% unless site.phone_number == %}
+            <a id="contact-button" href="tel:+{{site.phone_number}}"
+                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
+                target="_blank">
+                <i class="fa fa-phone"></i>تلفن
+            </a>
+            {% endunless %}
+            <!-- Email -->
+            {% unless site.email == %}
+            <a id="contact-button" href="mailto:{{site.email}}"
+                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
+                target="_blank">
+                <i class="fas fa-envelope"></i>فرستادن ایمیل
+            </a>
+            {% endunless %}
+            <!-- Whatsapp -->
+            {% unless site.whatsapp == %}
+            <a id="contact-button" href="https://wa.me/{{ site.mobile_number }}?text={{ site.whatsapp_text }}"
+                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
+                target="_blank">
+                <i class="fab fa-whatsapp"></i>واتس‌اپ
+            </a>
+            {% endunless %}
+            <hr>
+            <h3 class="is-size-5 is-uppercase has-text-weight-semibold has-text-black is-marginless">
+                رایان‌پرداز در شبکه‌های اجتماعی:
+            </h3>
+            <div class="column is-full is-size-3">
+                {% unless site.facebook_username == %}
+                <a href="http://www.facebook.com/{{site.facebook_username}}" target="_blank" class="has-text-black"><i class="fab fa-facebook"></i></a>
+                {% endunless %}
+                {% unless site.twitter_username == %}
+                <a href="http://www.twitter.com/{{site.twitter_username}}" target="_blank" class="has-text-black"><i class="fab fa-twitter"></i></a>
+                {% endunless %}
+                {% unless site.instagram_username ==  %}
+                <a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank" class="has-text-black"><i class="fab fa-instagram"></i></a>
+                {% endunless %}
+                {% unless site.linkedin_username ==  %}
+                <a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" class="has-text-black"><i class="fab fa-linkedin"></i></a>
+                {% endunless %}
+            </div>
+        </div>
+    </div>
+</section>
